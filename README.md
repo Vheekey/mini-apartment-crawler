@@ -1,7 +1,9 @@
 # mini-apartment-crawler
 Since we all live busy lives, this is a mini apartment crawler to reduce the checking of bostad websites for first hand contracts as the sites are crawled on a daily basis and emails are sent out directly after the process is finished.
 
-Just a bit of tinkering while feeling bored and a few lines of code later, we have a working solution.
+Just a bit of tinkering while feeling bored and a few lines of code later, we have a working solution. 
+
+Kindly note that this is for 3 rooms and above and more sites will be added as I find the time.
 
 # Usage
 To run in console, simply run the following command:
