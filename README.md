@@ -5,6 +5,9 @@ Just a bit of tinkering while feeling bored and a few lines of code later, we ha
 
 Kindly note that this is for 3 rooms and above and more sites will be added as I find the time.
 
+# Languages
+This is written in bash and node.js.
+
 # Usage
 To run in console, simply run the following command:
 
