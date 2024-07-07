@@ -1,17 +1,17 @@
 #!/bin/bash
 
-source constants.sh
+source common.sh
 
-
-echo "Searching for apartments in Stockholm..."
+log "Starting script"
+log "Searching for apartments in Stockholm..."
 
 # Run the Node.js crawler
-echo "Crawling bostad.stockholm.se"
+log "Crawling bostad.stockholm.se"
 node "${BFGEN_CRAWLER}"
 
 # Check if the data file was created
 if [[ ! -f "$DATA_FILE" ]]; then
-  echo "Error: Data file not found. Exiting."
+  log "Error: Data file not found. Exiting."
   exit 1
 fi
 
@@ -19,13 +19,13 @@ fi
 data_bostad=$(cat "$DATA_FILE")
 count=$(echo "$data_bostad" | jq '. | length')
 
-echo "Found $count apartments"
+log "Found $count apartments"
 echo "Found these apartments :" > "$TEMP_FILE"
 echo "================================================================" >> "$TEMP_FILE"
 echo "" >> "$TEMP_FILE"
 
 if [[ $count -eq 0 ]]; then
-  echo "No apartments found"
+  log "No apartments found"
   exit 1
 fi
 
@@ -50,7 +50,7 @@ process_apartment() {
         echo "" >> "$TEMP_FILE"
     fi
   else
-    echo "Invalid or missing price for $address ($area)"
+    log "Invalid or missing price for $address ($area)"
   fi
 }
 
@@ -60,9 +60,9 @@ echo "$data_bostad" | jq -c '.[]' | while IFS= read -r row; do
 done
 
 # Send the email
-echo "Sending email..."
+log "Sending email..."
 bash "$EMAIL_SCRIPT" "$SUBJECT" "$TEMP_FILE"
 
 # Clean up
 rm -f "$TEMP_FILE"
-echo "Script finished"
+log "Script finished"

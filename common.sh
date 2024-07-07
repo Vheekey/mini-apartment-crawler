@@ -7,3 +7,11 @@ EMAIL_SCRIPT="send_email.sh"
 MIN_PRICE=14001
 BFGEN_CRAWLER="bfgen_crawler_node.js"
 RECIPIENT="vheey01@gmail.com"
+EMAIL_LOG="logs/email_log.txt"
+LOG_FILE="logs/log.txt"
+
+
+
+log() {
+    echo "[$(date)] $1" >> $LOG_FILE;
+}

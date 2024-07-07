@@ -121,14 +121,14 @@
   {
     "area": "Stockholm, Skärholmen",
     "address": "Andholmsvägen 3",
-    "link": "https://bostad.stockholm.se/bostad/202414703",
+    "link": "https://bostad.stockholm.se/bostad/202414471",
     "price": "17 844 kr/mån",
     "priceInt": 17844
   },
   {
     "area": "Stockholm, Skärholmen",
     "address": "Andholmsvägen 3",
-    "link": "https://bostad.stockholm.se/bostad/202414471",
+    "link": "https://bostad.stockholm.se/bostad/202414703",
     "price": "17 844 kr/mån",
     "priceInt": 17844
   },
@@ -156,16 +156,16 @@
   {
     "area": "Stockholm, Skärholmen",
     "address": "Bredholmstorget 18",
-    "link": "https://bostad.stockholm.se/bostad/202408834",
-    "price": "15 655–17 284 kr/mån",
-    "priceInt": 15655
+    "link": "https://bostad.stockholm.se/bostad/202413118",
+    "price": "18 080–19 962 kr/mån",
+    "priceInt": 18080
   },
   {
     "area": "Stockholm, Skärholmen",
     "address": "Bredholmstorget 18",
-    "link": "https://bostad.stockholm.se/bostad/202413118",
-    "price": "18 080–19 962 kr/mån",
-    "priceInt": 18080
+    "link": "https://bostad.stockholm.se/bostad/202408834",
+    "price": "15 655–17 284 kr/mån",
+    "priceInt": 15655
   },
   {
     "area": "Stockholm, Bandhagen",
