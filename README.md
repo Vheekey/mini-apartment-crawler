@@ -42,7 +42,7 @@ crontab -e
 4. Add the following line to the crontab:
 ```
 # Run script at 4 AM, 1 PM, and 6 PM daily while keeping system from falling asleep in the middle of an execution(caffeinate)
-0 4,13,18 * * * /usr/bin/caffeinate -s /bin/bash /path/to/folder/home_crawler.sh >/dev/null 2>&1
+0 4,13,18 * * * cd /path/to/folder && /usr/bin/caffeinate -s /bin/bash home_crawler.sh >/dev/null 2>&1
 ```
 5. Sit back and relax, the script will run every day at 4 AM, 1 PM, and 6 PM.
 
